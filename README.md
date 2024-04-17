@@ -35,7 +35,7 @@
 
 - [ ] Outline the UI
 - [ ] Split the UI into modules
-- [ ] mplement logic
+- [ ] Implement logic
 - [ ] Implement a fake user
 
 <!-- Contact -->
