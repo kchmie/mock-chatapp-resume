@@ -4,7 +4,7 @@
 
 function App() {
   return (
-    <div className='w-screen h-screen font-poppins bg-neutral-100 text-slate-900 dark:bg-slate-800 dark:text-indigo-100 flex'>
+    <div className='w-screen h-screen font-montserrat bg-neutral-100 text-slate-900 dark:bg-slate-800 dark:text-indigo-100 flex'>
       <div className='flex shadow-xl shadow-black'>
         <div className="p-5 flex-col flex justify-center items-center bg-neutral-200 dark:bg-slate-800 dark:shadow-sm dark:shadow-gray-600">
           <span className="material-symbols-outlined p-2 my-1 text-3xl font-light rounded-full cursor-pointer aspect-square flex justify-center align-center

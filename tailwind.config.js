@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins : ['"Poppins"', ...defaultTheme.fontFamily.sans]
+        montserrat : ['"Montserrat"', ...defaultTheme.fontFamily.sans]
       }
     },
   },
