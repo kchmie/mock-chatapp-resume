@@ -2,6 +2,8 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 
+import ThemeSwitcher from "./ThemeSwitcher"
+
 function App() {
   return (
     <div className='w-screen h-screen font-montserrat bg-neutral-100 text-slate-900 dark:bg-slate-800 dark:text-indigo-100 flex'>
@@ -19,6 +21,9 @@ function App() {
          dark:hover:bg-slate-700 hover:bg-neutral-100 transition-all duration-300">
             settings
           </span>
+          <div className="absolute bottom-4">
+            <ThemeSwitcher />
+          </div>
         </div>
         <div className="p-5 h-full w-80">
           <div className="flex justify-between align-center items-center mb-10">
