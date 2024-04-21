@@ -23,8 +23,8 @@ function ThemeSwitcher() {
     }, [darkMode])
 
     return <>
-        <span className="material-symbols-outlined px-2 my-1 text-3xl font-light rounded-full cursor-pointer aspect-square flex justify-center items-center align-center
-         dark:hover:bg-slate-700 hover:bg-neutral-200 transition-all duration-300" onClick={() => { setDarkMode(!darkMode) }}>
+        <span className="material-symbols-outlined px-3  text-3xl font-light cursor-pointer aspect-square flex justify-center items-center align-center
+         dark:hover:bg-slate-700 hover:bg-neutral-300 transition-all duration-300" onClick={() => { setDarkMode(!darkMode) }}>
             {darkMode ? "dark_mode" : "light_mode"}
         </span>
     </>
