@@ -26,21 +26,21 @@ function App() {
           </div>
         </div>
         <div className="h-full w-72 hidden md:block">
-          <div className="p-5 px-3 pb-4 flex justify-between align-center items-center">
-            <p className="text-2xl">Chats</p>
-            <span className="material-symbols-outlined text-3xl font-light cursor-pointer aspect-square flex justify-center align-center ml-6">
+          <div className="p-5 px-3 pb-5 flex justify-between align-center items-center">
+            <p className="text-xl">Chats</p>
+            <span className="material-symbols-outlined text-2xl font-light cursor-pointer aspect-square flex justify-center align-center ml-6">
               search
             </span>
           </div>
-          <div className="border-2 border-x-0 border-neutral-300 hover:bg-neutral-300 dark:border-slate-700 dark:hover:bg-slate-700 transition-all duration-300 p-3 flex cursor-pointer text-sm">
-            <div className="w-16 h-13 bg-slate-600 rounded-full"></div>
+          <div className="items-center border-2 border-x-0 border-neutral-300 hover:bg-neutral-300 dark:border-slate-700 dark:hover:bg-slate-700 transition-all duration-300 p-3 flex cursor-pointer text-sm">
+            <div className="w-12 h-10 bg-slate-600 rounded-full"></div>
             <div className='ml-3 w-full'>
               <div className='flex justify-between items-center w-full pr-2'>
                 <div className="text-lg">John Doe</div>
                 <div className='w-3 h-3 bg-sky-500 rounded-full'></div>
               </div>
               <div className='flex justify-between items-center w-full pr-2'>
-                <div className='font-light'>Hello, world!</div>
+                <div className='text-slate-400 text-sm'>Hello, world!</div>
                 <div className='text-slate-400 text-sm'>17.04</div>
               </div>
             </div>
@@ -48,22 +48,22 @@ function App() {
         </div>
       </div>
       <div className="w-full h-full dark:bg-slate-700 bg-neutral-300 flex flex-col">
-        <div className="h-20 dark:bg-slate-800 bg-neutral-200 flex items-center pl-3 sticky top-0">
+        <div className="h-20 dark:bg-slate-800 bg-neutral-200 flex items-center pl-3 sticky top-0 shadow-lg">
           <div className="pr-4 flex items-center ">
             <span className="material-symbols-outlined rotate-90 text-3xl text-slate-400 hover:cursor-pointer">
               expand_more
             </span>
           </div>
-          <div className="w-12 h-12 bg-slate-600 rounded-full"></div>
+          <div className="w-10 h-10 bg-slate-600 rounded-full"></div>
           <div className="pl-4">
-            <div className="text-xl">John Doe</div>
+            <div className="text-lg">John Doe</div>
             <div className='text-slate-400 text-sm'>Online</div>
           </div>
         </div>
-        <div className="overflow-auto h-full w-full pt-20 pb-2 px-4 flex flex-col-reverse no-scrollbar">
+        <div className="overflow-auto h-full w-full pt-14 sm:pt-0 pb-2 px-4 flex flex-col-reverse no-scrollbar">
           <div className="w-full flex justify-end p-3 py-2 items-center">
             <div className="w-3/4 flex justify-end">
-              <div className="dark:bg-slate-800 bg-neutral-200 p-4 py-3 shadow-lg w-fit">
+              <div className="dark:bg-slate-800 bg-neutral-200 p-4 py-3 shadow-md w-fit">
                 <div className="text-slate-400 text-sm">You</div>
                 <div>Odio consectetur aliquam atque ratione sapiente. Eius earum commodi perferendis veritatis vitae atque, officia adipisci ad illo deserunt?</div>
               </div>
@@ -71,7 +71,7 @@ function App() {
           </div>
           <div className="w-full flex justify-start p-3 py-2 items-center">
             <div className="w-3/4 flex justify-start">
-              <div className="dark:bg-slate-800 bg-neutral-200 p-4 py-3 shadow-lg w-fit">
+              <div className="dark:bg-slate-800 bg-neutral-200 p-4 py-3 shadow-md w-fit">
                 <div className="text-slate-400 text-sm">John Doe</div>
                 <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At dicta, repellat inventore quidem sequi nihil ut numquam soluta temporibus exercitationem assumenda vitae officia accusantium odit optio quaerat aut ipsa itaque!</div>
               </div>
@@ -79,7 +79,7 @@ function App() {
           </div>
           <div className="w-full flex justify-end p-3 py-2 items-center">
             <div className="w-3/4 flex justify-end">
-              <div className="dark:bg-slate-800 bg-neutral-200 p-4 py-3 shadow-lg w-fit">
+              <div className="dark:bg-slate-800 bg-neutral-200 p-4 py-3 shadow-md w-fit">
                 <div className="text-slate-400 text-sm">You</div>
                 <div>Hello, world!</div>
               </div>
