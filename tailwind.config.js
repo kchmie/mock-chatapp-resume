@@ -11,7 +11,7 @@ export default {
         montserrat : ['"Montserrat"', ...defaultTheme.fontFamily.sans]
       },
       boxShadow: {
-        'lg': '0px 20px 20px -16px rgba(0, 0, 0, 0.2);'
+        'lg': '0px 20px 20px -16px rgba(0, 0, 0, 0.1);'
       }
     },
   },

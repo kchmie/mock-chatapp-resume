@@ -33,7 +33,7 @@
 <!-- Features -->
 ### 📝 To-do
 
-- [ ] Outline the UI
+- [x] Outline the UI
 - [ ] Split the UI into modules
 - [ ] Implement logic
 - [ ] Implement a fake user
