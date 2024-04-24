@@ -1,6 +1,6 @@
 
 function ChatMessage(prop: any) {
-    return (<>
+    return <>
         <div className={`w-full flex ${prop.author == "You" ? "justify-end" : "justify-start"} p-3 py-2 items-center`}>
             <div className="w-3/4 flex justify-end">
                 <div className="dark:bg-slate-800 bg-neutral-200 p-4 py-3 shadow-md w-fit">
@@ -9,7 +9,7 @@ function ChatMessage(prop: any) {
                 </div>
             </div>
         </div>
-    </>)
+    </>
 }
 
 export default ChatMessage;

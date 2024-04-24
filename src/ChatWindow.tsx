@@ -2,7 +2,7 @@
 import ChatMessage from "./ChatMessage"
 
 function ChatWindow() {
-    return (<>
+    return <>
         <div className="w-full h-full dark:bg-slate-700 bg-neutral-300 flex flex-col">
             <div className="h-20 dark:bg-slate-800 bg-neutral-200 flex items-center pl-3 sticky top-0 shadow-lg">
                 <div className="pr-4 flex items-center ">
@@ -17,9 +17,9 @@ function ChatWindow() {
                 </div>
             </div>
             <div className="overflow-auto h-full w-full pt-14 sm:pt-0 pb-2 px-4 flex flex-col-reverse no-scrollbar">
-                <ChatMessage author="You" message="Odio consectetur aliquam atque ratione sapiente. Eius earum commodi perferendis veritatis vitae atque, officia adipisci ad illo deserunt?"/>
-                <ChatMessage author="John Doe" message="Lorem ipsum dolor sit, amet consectetur adipisicing elit. At dicta, repellat inventore quidem sequi nihil ut numquam soluta temporibus exercitationem assumenda vitae officia accusantium odit optio quaerat aut ipsa itaque!"/>
-                <ChatMessage author="You" message="Hello, world!"/>
+                <ChatMessage author="You" message="Odio consectetur aliquam atque ratione sapiente. Eius earum commodi perferendis veritatis vitae atque, officia adipisci ad illo deserunt?" />
+                <ChatMessage author="John Doe" message="Lorem ipsum dolor sit, amet consectetur adipisicing elit. At dicta, repellat inventore quidem sequi nihil ut numquam soluta temporibus exercitationem assumenda vitae officia accusantium odit optio quaerat aut ipsa itaque!" />
+                <ChatMessage author="You" message="Hello, world!" />
             </div>
             <div className="h-20 dark:bg-slate-800 w-full bg-neutral-200 flex justify-around items-center px-4">
                 <div className="w-full border-2 border-neutral-300 shadow-sm dark:border-slate-700 p-2 px-4" >
@@ -30,7 +30,7 @@ function ChatWindow() {
                 </div>
             </div>
         </div>
-    </>)
+    </>
 }
 
 export default ChatWindow;
