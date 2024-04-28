@@ -1,4 +1,4 @@
-
+import { GoArrowLeft } from "react-icons/go";
 import ChatMessage from "./ChatMessage"
 
 function ChatWindow() {
@@ -6,8 +6,8 @@ function ChatWindow() {
         <div className="w-full h-full dark:bg-slate-700 bg-neutral-300 flex flex-col">
             <div className="h-20 dark:bg-slate-800 bg-neutral-200 flex items-center pl-3 sticky top-0 shadow-lg">
                 <div className="pr-4 flex items-center ">
-                    <span className="material-symbols-outlined rotate-90 text-3xl text-slate-400 hover:cursor-pointer">
-                        expand_more
+                    <span className="material-symbols-outlined text-2xl hover:cursor-pointer">
+                        <GoArrowLeft />
                     </span>
                 </div>
                 <div className="w-10 h-10 bg-slate-600 rounded-full"></div>
