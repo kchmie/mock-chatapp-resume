@@ -1,10 +1,10 @@
 
-import ChatList from "./ChatList"
+// import ChatList from "./ChatList"
 import ChatWindow from "./ChatWindow"
 
 function Chats() {
     return <>
-        <ChatList />
+        {/* <ChatList /> */}
         <ChatWindow />
     </>
 }

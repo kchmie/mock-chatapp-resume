@@ -34,9 +34,9 @@
 ### 📝 To-do
 
 - [x] Outline the UI
-- [ ] Split the UI into modules
+- [x] Split the UI into components
 - [ ] Implement logic
-- [ ] Implement a fake user
+- [ ] Implement a chat bot
 
 <!-- Contact -->
 ## 🤝🏻 Contact

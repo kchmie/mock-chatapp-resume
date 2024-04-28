@@ -24,9 +24,9 @@ function ThemeSwitcher() {
     }, [darkMode])
 
     return <>
-        <span className="material-symbols-outlined px-3 text-2xl font-light cursor-pointer aspect-square flex justify-center items-center align-center
-         dark:hover:bg-slate-700 hover:bg-neutral-300 transition-all duration-300" onClick={() => { setDarkMode(!darkMode) }}>
-            {darkMode ? <GoMoon /> : <GoSun />}
+        <span className="material-symbols-outlined px-3 text-3xl font-light cursor-pointer aspect-square flex justify-center items-center align-center
+            transition-all duration-300" onClick={() => { setDarkMode(!darkMode) }}>
+            {darkMode ? <GoMoon className="-scale-x-100" /> : <GoSun />}
         </span>
     </>
 }

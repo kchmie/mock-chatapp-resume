@@ -4,23 +4,30 @@
 
 import MenuBar from "./MenuBar"
 import Chats from "./Chats"
-// import Loading from "./Loading"
+
+import { createBrowserRouter, RouterProvider, Link } from "react-router-dom"
+
+const base = "/mock-chatapp-resume"
+const router = createBrowserRouter([
+  {
+    path: base,
+    element: <Chats />
+  },
+  {
+    path: base + "/test",
+    element: <>
+      <Link to={base}>Go back</Link>
+    </>
+  }
+])
 
 function App() {
-  // const [fontsLoaded, setFontsLoaded] = useState(false)
-
-  // document.fonts.ready.then(() => {
-  //   setFontsLoaded(true)
-  // })
-
   return <>
     <div className='w-screen h-screen font-montserrat bg-neutral-200 text-slate-900 dark:bg-slate-800 dark:text-indigo-100 flex sm:flex-row flex-col-reverse'>
       <MenuBar />
-      <Chats />
+      {/* <Chats /> */}
+      <RouterProvider router={router}/>
     </div>
-    {/* <div className={`${fontsLoaded ? "hidden" : "block"}`}>
-      <Loading />
-    </div> */}
   </>
 }
 
