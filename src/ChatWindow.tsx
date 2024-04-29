@@ -17,9 +17,9 @@ function ChatWindow() {
                 </div>
             </div>
             <div className="overflow-auto h-full lg:w-4/5 w-full pt-2 sm:pt-0 pb-2 px-4 flex flex-col-reverse no-scrollbar">
-                <ChatMessage author="You" time="21:37" message="Odio consectetur aliquam atque ratione sapiente. Eius earum commodi perferendis veritatis vitae atque, officia adipisci ad illo deserunt?" />
-                <ChatMessage author="John Doe" time="21:38" message="Lorem ipsum dolor sit, amet consectetur adipisicing elit. At dicta, repellat inventore quidem sequi nihil ut numquam soluta temporibus exercitationem assumenda vitae officia accusantium odit optio quaerat aut ipsa itaque!" />
-                <ChatMessage author="You" time="22:19" message="Hello, world!" />
+                <ChatMessage author="You" time="22:36" message="Odio consectetur aliquam atque ratione sapiente. Eius earum commodi perferendis veritatis vitae atque, officia adipisci ad illo deserunt?" />
+                <ChatMessage author="John Doe" time="22:34" message="Lorem ipsum dolor sit, amet consectetur adipisicing elit. At dicta, repellat inventore quidem sequi nihil ut numquam soluta temporibus exercitationem assumenda vitae officia accusantium odit optio quaerat aut ipsa itaque!" />
+                <ChatMessage author="You" time="21:19" message="Hello, world!" />
             </div>
             <div className="h-20 dark:bg-slate-800 w-full bg-neutral-100 flex justify-around items-center px-4">
                 <div className="lg:w-4/5 w-full flex justify-around items-center border-2 border-neutral-200 shadow-sm dark:border-slate-700 m-3 rounded">

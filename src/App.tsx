@@ -5,27 +5,39 @@
 import MenuBar from "./MenuBar"
 import Chats from "./Chats"
 
-import { createBrowserRouter, RouterProvider, Link } from "react-router-dom"
+import { createBrowserRouter, RouterProvider, Outlet, Navigate } from "react-router-dom"
 
-const base = "/mock-chatapp-resume"
+const  Layout = () => {
+  return <>
+    <MenuBar />
+    <Outlet />
+  </>
+}
+
 const router = createBrowserRouter([
   {
-    path: base,
-    element: <Chats />
-  },
-  {
-    path: base + "/test",
-    element: <>
-      <Link to={base}>Go back</Link>
-    </>
+    element: <Layout />,
+    errorElement: <Navigate to="/" replace/>,
+    children: [
+      {
+        path: "/",
+        element: <h1>Home</h1>
+      },
+      {
+        path: "/chat",
+        element: <Chats />
+      },
+      {
+        path: "/settings",
+        element: <h1>Settings</h1>
+      }
+    ]
   }
-])
+], {basename: "/mock-chatapp-resume"})
 
 function App() {
   return <>
-    <div className='w-screen h-screen font-montserrat bg-neutral-200 text-slate-900 dark:bg-slate-800 dark:text-indigo-100 flex sm:flex-row flex-col-reverse'>
-      <MenuBar />
-      {/* <Chats /> */}
+    <div className='w-screen h-screen font-inter bg-neutral-200 text-slate-900 dark:bg-slate-800 dark:text-indigo-100 flex sm:flex-row flex-col-reverse'>
       <RouterProvider router={router}/>
     </div>
   </>
