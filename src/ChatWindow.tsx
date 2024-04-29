@@ -11,9 +11,9 @@ function ChatWindow() {
                     </span>
                 </div>
                 <div className="w-11 h-11 bg-slate-600 rounded-full"></div>
-                <div className="pl-4">
+                <div className="pl-4 text-slate-600 dark:text-slate-300">
                     <div className="text-xl">John Doe</div>
-                    <div className='text-slate-400 text-sm'>Online</div>
+                    <div className='text-slate-500 dark:text-slate-400 text-sm'>Online</div>
                 </div>
             </div>
             <div className="overflow-auto h-full lg:w-4/5 w-full pt-2 sm:pt-0 pb-2 px-4 flex flex-col-reverse no-scrollbar">
@@ -26,7 +26,7 @@ function ChatWindow() {
                     <div className="w-full p-2 px-4" >
                         <input type="text" placeholder="Message..." className="p-0 bg-transparent border-none w-full focus:ring-offset-0 focus:ring-0" />
                     </div>
-                    <div className="w-auto border-l-2 hover:cursor-pointer border-neutral-200 shadow-sm dark:border-slate-700 p-2 px-4 dark:bg-slate-700 bg-neutral-200" >
+                    <div className="text-slate-700 dark:text-slate-400 w-auto border-l-2 hover:cursor-pointer border-neutral-200 shadow-sm dark:border-slate-700 p-2 px-4 dark:bg-slate-700 bg-neutral-200" >
                         Send
                     </div>
                 </div>
