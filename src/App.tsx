@@ -1,17 +1,26 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+import { useState, createContext } from 'react'
 
 import MenuBar from "./MenuBar"
 import Chats from "./Chats"
+import Modal from "./Modal"
 
 import { createBrowserRouter, RouterProvider, Outlet, Navigate } from "react-router-dom"
 
+export const ModalContext = createContext(null as any)
+
 const  Layout = () => {
-  return <>
-    <MenuBar />
-    <Outlet />
-  </>
+  const [modal, setModal] = useState(null)
+  //setModal(<h1>Hello</h1>)
+
+  return <div className='w-screen h-screen font-inter bg-neutral-200 text-slate-600 dark:text-slate-300 dark:bg-slate-800 flex flex-row'>
+    <ModalContext.Provider value={{setModal: setModal}}>
+      <MenuBar />
+      <Outlet />
+      {modal != null && (
+        <Modal>{modal}</Modal>
+      )}
+    </ModalContext.Provider>
+  </div>
 }
 
 const router = createBrowserRouter([
@@ -37,9 +46,7 @@ const router = createBrowserRouter([
 
 function App() {
   return <>
-    <div className='w-screen h-screen font-inter bg-neutral-200 text-slate-600 dark:text-slate-300 dark:bg-slate-800 flex sm:flex-row flex-col-reverse'>
       <RouterProvider router={router}/>
-    </div>
   </>
 }
 
