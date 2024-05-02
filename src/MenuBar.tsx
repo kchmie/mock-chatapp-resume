@@ -1,6 +1,7 @@
 import { GoHome, GoComment, GoGear } from "react-icons/go";
 import ThemeSwitcher from "./ThemeSwitcher"
 import { useLocation, Link } from "react-router-dom";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 function MenuBar() {
     const location = useLocation();
@@ -26,6 +27,7 @@ function MenuBar() {
                 </span>
             </Link>
             <div className="sm:absolute sm:bottom-2 hidden sm:block">
+                <LanguageSwitcher />
                 <ThemeSwitcher />
             </div>
         </div>

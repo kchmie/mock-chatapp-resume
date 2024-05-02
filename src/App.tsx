@@ -1,10 +1,12 @@
-import { useState, createContext } from 'react'
+import { useState, createContext, useEffect } from 'react'
 
 import MenuBar from "./MenuBar"
 import Chats from "./Chats"
 import Modal from "./Modal"
+import Home from './Home'
 
 import { createBrowserRouter, RouterProvider, Outlet, Navigate } from "react-router-dom"
+import { useTranslation } from 'react-i18next'
 
 export const ModalContext = createContext(null as any)
 
@@ -30,7 +32,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <h1>Home</h1>
+        element: <Home />
       },
       {
         path: "/chat",
@@ -45,6 +47,24 @@ const router = createBrowserRouter([
 ], {basename: "/mock-chatapp-resume"})
 
 function App() {
+  const {i18n} = useTranslation()
+
+  useEffect(() => {
+    let storage = localStorage.getItem("language")
+    if (storage != null) {
+      i18n.changeLanguage(storage)
+    }
+    else {  
+      const lng = navigator.language
+      i18n.changeLanguage(lng)
+      localStorage.setItem("language", i18n.language)
+    }
+  }, [])
+
+  useEffect(() => {
+      localStorage.setItem("language", i18n.language)
+  }, [i18n.language])
+
   return <>
       <RouterProvider router={router}/>
   </>

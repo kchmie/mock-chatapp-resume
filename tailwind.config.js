@@ -12,6 +12,9 @@ export default {
       },
       boxShadow: {
         'lg': '0px 20px 20px -16px rgba(0, 0, 0, 0.1);'
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
       }
     },
   },
