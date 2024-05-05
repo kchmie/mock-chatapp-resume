@@ -1,9 +1,9 @@
 
 import { useContext } from "react";
-import { ModalContext } from "./App";
+import { AppContext } from "./App";
 
 function Modal({children} : any) {
-    const { setModal } = useContext(ModalContext)
+    const { setModal } = useContext(AppContext)
 
     function hide(e: any){
         if(e.target == e.currentTarget) 

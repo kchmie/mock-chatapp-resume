@@ -1,11 +1,11 @@
 import { GoHome, GoComment, GoGear } from "react-icons/go";
 import { Link } from "react-router-dom";
-import { ModalContext } from "./App";
+import { AppContext } from "./App";
 import { useContext } from "react";
 import { useTranslation } from "react-i18next";
 
 function NavigationModal() {
-    const { setModal } = useContext(ModalContext)
+    const { setModal } = useContext(AppContext)
     const { t } = useTranslation() 
 
     return <div className="">

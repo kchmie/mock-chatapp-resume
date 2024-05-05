@@ -2,11 +2,11 @@ import { GoChevronLeft } from "react-icons/go"
 import ChatMessage from "./ChatMessage"
 import NavigationModal from "./NavigationModal"
 
-import { ModalContext } from "./App"
+import { AppContext } from "./App"
 import { useContext } from "react"
 
 function ChatWindow() {
-    const { setModal } = useContext(ModalContext)
+    const { setModal } = useContext(AppContext)
 
     return <>
         <div className="w-full h-full dark:bg-slate-700 bg-neutral-200 flex flex-col items-center">

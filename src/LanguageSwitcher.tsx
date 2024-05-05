@@ -1,10 +1,10 @@
 import { GoGlobe } from "react-icons/go";
-import { ModalContext } from "./App";
+import { AppContext } from "./App";
 import { useContext } from "react";
 import LanguageModal from "./LanguageModal"
 
 function LanguageSwitcher() {
-    const { setModal } = useContext(ModalContext)
+    const { setModal } = useContext(AppContext)
 
     return <>
         <span className="px-3 text-3xl font-light cursor-pointer aspect-square flex justify-center items-center align-center

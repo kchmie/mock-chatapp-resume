@@ -1,31 +1,13 @@
 import { GoMoon, GoSun } from "react-icons/go";
-import { useEffect, useState } from "react"
+import { useContext } from "react"
+import { AppContext } from "./App";
 
 function ThemeSwitcher() {
-    const [darkMode, setDarkMode] = useState(true)
-
-    // Note: saving while in strict mode doesn't work for some reason
-
-    useEffect(() => {
-        let storage = localStorage.getItem('darkmode')
-        if (storage != null)
-            setDarkMode(storage == "true")
-        else if (window.matchMedia && !window.matchMedia('(prefers-color-scheme: dark)').matches)
-            setDarkMode(false)
-    }, [])
-
-    useEffect(() => {
-        localStorage.setItem("darkmode", darkMode.toString())
-
-        if (darkMode)
-            document.documentElement.classList.add("dark")
-        else
-            document.documentElement.classList.remove("dark")
-    }, [darkMode])
+    const {darkMode, toggleDarkMode} = useContext(AppContext)
 
     return <>
         <span className="material-symbols-outlined px-3 text-3xl font-light cursor-pointer aspect-square flex justify-center items-center align-center
-            transition-all duration-300" onClick={() => { setDarkMode(!darkMode) }}>
+            transition-all duration-300" onClick={() => { toggleDarkMode() }}>
             {darkMode ? <GoMoon className="-scale-x-100" /> : <GoSun />}
         </span>
     </>

@@ -1,9 +1,9 @@
-import { ModalContext } from "./App";
+import { AppContext } from "./App";
 import { useContext } from "react";
 import { useTranslation } from "react-i18next";
 
 function NavigationModal() {
-    const { setModal } = useContext(ModalContext)
+    const { setModal } = useContext(AppContext)
     const { i18n } = useTranslation()
 
     return <div className="dark:text-slate-400 text-slate-600 ">
