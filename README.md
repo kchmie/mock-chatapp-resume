@@ -37,7 +37,3 @@
 - [x] Split the UI into components
 - [ ] Implement logic
 - [ ] Implement a chat bot
-
-<!-- Contact -->
-## 🤝🏻 Contact
-Discord - @christhefrog
